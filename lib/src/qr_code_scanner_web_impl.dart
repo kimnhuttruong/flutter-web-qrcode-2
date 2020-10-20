@@ -94,7 +94,7 @@ class _QrCodeCameraWebImplState extends State<QrCodeCameraWebImpl> {
 
   bool _disposed = false;
   tick() {
-    if(_disposed) {
+    if (_disposed) {
       return;
     }
 
@@ -121,7 +121,7 @@ class _QrCodeCameraWebImplState extends State<QrCodeCameraWebImpl> {
         this.widget.qrCodeCallback(value);
       }
     }
-    Future.delayed(Duration(milliseconds: 10), () => tick());
+    Future.delayed(Duration(seconds: 1), () => tick());
   }
 
   @override
